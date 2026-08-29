@@ -1,0 +1,180 @@
+{
+  "khoi_dau": {
+    "name": "Con Hẻm Khởi Đầu", "icon": "🌑", "category": "thanh_pho",
+    "danger_level": 1, "min_level": 1,
+    "requires_location": null, "requires_boss": false,
+    "boss": null, "encounter_rate": {"ghost": 0.30, "npc": 0.20, "item": 0.25, "event": 0.15, "secret": 0.10},
+    "description": "Con hẻm mờ sương nơi mọi Ngự Quỷ Giả bắt đầu hành trình.",
+    "note": "Người chưa từng ngự Quỷ chỉ có thể khám phá tại đây (Rule 'chưa ngự quỷ')."
+  },
+  "lang_hoang_cuong": {
+    "name": "Làng Hoàng Cương", "icon": "🏚️", "category": "thanh_pho",
+    "danger_level": 2, "min_level": 3,
+    "requires_location": "khoi_dau", "requires_boss": false,
+    "boss": "quy_go_cua", "encounter_rate": {"ghost": 0.35, "npc": 0.20, "item": 0.20, "event": 0.15, "secret": 0.10},
+    "description": "Ngôi làng bị bỏ hoang sau một sự kiện linh dị chưa ai giải thích được."
+  },
+  "truong_hoc_bo_hoang": {
+    "name": "Trường Học Bỏ Hoang", "icon": "🏫", "category": "khu_dieu_tra",
+    "danger_level": 3, "min_level": 5,
+    "requires_location": "lang_hoang_cuong", "requires_boss": true,
+    "boss": "quy_muoi_do", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Hành lang tối om vang tiếng bước chân của những học sinh không còn tồn tại."
+  },
+  "benh_vien_bo_hoang": {
+    "name": "Bệnh Viện Bỏ Hoang", "icon": "🏥", "category": "khu_dieu_tra",
+    "danger_level": 4, "min_level": 7,
+    "requires_location": "truong_hoc_bo_hoang", "requires_boss": true,
+    "boss": "quy_y_ta_dem", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Mùi thuốc sát trùng cũ vẫn còn vương trong không khí lạnh lẽo."
+  },
+  "nghia_trang_cu": {
+    "name": "Nghĩa Trang Cũ", "icon": "🪦", "category": "khu_dieu_tra",
+    "danger_level": 4, "min_level": 8,
+    "requires_location": "benh_vien_bo_hoang", "requires_boss": true,
+    "boss": "quy_khoc_dem", "encounter_rate": {"ghost": 0.40, "npc": 0.10, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Những nấm mộ không tên nằm im lìm dưới lớp sương dày."
+  },
+  "duong_lang_bo_hoang": {
+    "name": "Đường Lang Bỏ Hoang", "icon": "🛣️", "category": "khu_dieu_tra",
+    "danger_level": 5, "min_level": 10,
+    "requires_location": "nghia_trang_cu", "requires_boss": true,
+    "boss": "quy_lang_bat", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Con đường vắng dẫn ra khỏi thị trấn nhưng chưa ai từng đi hết được nó."
+  },
+  "khach_san_hoang_vu": {
+    "name": "Khách Sạn Hoang Vu", "icon": "🏨", "category": "khu_dieu_tra",
+    "danger_level": 5, "min_level": 12,
+    "requires_location": "duong_lang_bo_hoang", "requires_boss": true,
+    "boss": "quy_guong_vo", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Từng là nơi sang trọng bậc nhất thành phố, giờ chỉ còn tiếng vọng."
+  },
+  "nha_may_bo_hoang": {
+    "name": "Nhà Máy Bỏ Hoang", "icon": "🏭", "category": "khu_dieu_tra",
+    "danger_level": 6, "min_level": 15,
+    "requires_location": "khach_san_hoang_vu", "requires_boss": true,
+    "boss": "quy_soi_xich", "encounter_rate": {"ghost": 0.35, "npc": 0.10, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Dây chuyền sản xuất đã ngừng từ lâu, nhưng máy móc đôi khi vẫn tự chuyển động."
+  },
+  "khu_rung_am_u": {
+    "name": "Khu Rừng Âm U", "icon": "🌲", "category": "khu_dieu_tra",
+    "danger_level": 7, "min_level": 20,
+    "requires_location": "nha_may_bo_hoang", "requires_boss": true,
+    "boss": "quy_tho_san", "encounter_rate": {"ghost": 0.35, "npc": 0.10, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Rừng cây rậm rạp nuốt chửng ánh sáng ban ngày."
+  },
+  "nghia_trang_co": {
+    "name": "Nghĩa Trang Cổ", "icon": "⚰️", "category": "quy_vuc",
+    "danger_level": 8, "min_level": 22,
+    "requires_location": "khu_rung_am_u", "requires_boss": true,
+    "boss": "quy_thi_the", "encounter_rate": {"ghost": 0.40, "npc": 0.05, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Khu mộ cổ xưa hơn cả thành phố — nơi ranh giới sống chết mỏng nhất."
+  },
+  "nha_may_hoa_chat": {
+    "name": "Nhà Máy Hóa Chất", "icon": "☣️", "category": "quy_vuc",
+    "danger_level": 8, "min_level": 20,
+    "requires_location": "nha_may_bo_hoang", "requires_boss": true,
+    "boss": "quy_lua_den", "encounter_rate": {"ghost": 0.35, "npc": 0.10, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Hơi hóa chất còn sót lại khiến ảo giác linh dị trở nên chân thực đáng sợ."
+  },
+  "quy_vuc_bang": {
+    "name": "Quỷ Vực Băng Giá", "icon": "❄️", "category": "quy_vuc",
+    "danger_level": 9, "min_level": 20,
+    "requires_location": "nha_may_hoa_chat", "requires_boss": true,
+    "boss": "quy_bang_gia", "encounter_rate": {"ghost": 0.45, "npc": 0.00, "item": 0.15, "event": 0.30, "secret": 0.10},
+    "description": "Một khe nứt không gian dẫn vào vùng đất lạnh giá không thuộc thế giới thực."
+  },
+  "rap_hat_bo_hoang": {
+    "name": "Rạp Hát Bỏ Hoang", "icon": "🎭", "category": "khu_dieu_tra",
+    "danger_level": 9, "min_level": 30,
+    "requires_location": "quy_vuc_bang", "requires_boss": true,
+    "boss": "quy_hai_sac", "encounter_rate": {"ghost": 0.40, "npc": 0.10, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Sân khấu tối om nơi vở kịch cuối cùng chưa bao giờ có hồi kết."
+  },
+  "quy_vuc_vuong_quoc": {
+    "name": "Vương Quốc Linh Dị", "icon": "👑", "category": "quy_vuc",
+    "danger_level": 10, "min_level": 35,
+    "requires_location": "rap_hat_bo_hoang", "requires_boss": true,
+    "boss": "quy_vuong_hac_am", "encounter_rate": {"ghost": 0.50, "npc": 0.00, "item": 0.10, "event": 0.30, "secret": 0.10},
+    "description": "Lãnh địa riêng của một Quỷ Vương — bước vào đồng nghĩa chấp nhận hiểm nguy tột cùng."
+  },
+  "quy_vuc_ky_uc": {
+    "name": "Quỷ Vực Ký Ức", "icon": "🕯️", "category": "pho_ban_boss",
+    "danger_level": 11, "min_level": 50,
+    "requires_location": "quy_vuc_vuong_quoc", "requires_boss": true,
+    "boss": "quy_hoang_muoi_the", "encounter_rate": {"ghost": 0.60, "npc": 0.00, "item": 0.10, "event": 0.20, "secret": 0.10},
+    "description": "Ký ức của mười thế hệ chủ nhân trước hòa vào nhau thành một vùng đất không lối thoát dễ dàng."
+  },
+  "quy_vuc_tan_the": {
+    "name": "Quỷ Vực Tận Thế", "icon": "☠️", "category": "pho_ban_boss",
+    "danger_level": 12, "min_level": 50,
+    "requires_location": "quy_vuc_ky_uc", "requires_boss": true,
+    "boss": "quy_hoang_tan_the", "encounter_rate": {"ghost": 0.60, "npc": 0.00, "item": 0.10, "event": 0.20, "secret": 0.10},
+    "description": "Nơi tận cùng của thế giới linh dị — chỉ những kẻ mạnh nhất mới trở về nguyên vẹn."
+  },
+  "quy_vuc_hu_vo": {
+    "name": "Hư Vô Khởi Nguyên", "icon": "⚫", "category": "pho_ban_boss",
+    "danger_level": 13, "min_level": 60,
+    "requires_location": "quy_vuc_tan_the", "requires_boss": true,
+    "boss": "quy_cam_ky_khoi_nguyen",
+    "encounter_rate": {"ghost": 0.70, "npc": 0.00, "item": 0.05, "event": 0.15, "secret": 0.10},
+    "description": "Sự kiện thế giới cấp máy chủ — cần liên minh nhiều Ngự Quỷ Giả mới có cơ hội sống sót."
+  },
+
+  "cho_dem_bo_hoang": {
+    "name": "Chợ Đêm Bỏ Hoang", "icon": "🏮", "category": "thanh_pho",
+    "danger_level": 2, "min_level": 4,
+    "requires_location": "lang_hoang_cuong", "requires_boss": true,
+    "boss": "quy_den_long", "encounter_rate": {"ghost": 0.35, "npc": 0.20, "item": 0.20, "event": 0.15, "secret": 0.10},
+    "description": "Những sạp hàng bỏ không vẫn còn treo đèn lồng cháy dở, không ai rõ vì sao chưa từng tắt."
+  },
+  "cau_song_cu": {
+    "name": "Cầu Sông Cũ", "icon": "🌉", "category": "khu_dieu_tra",
+    "danger_level": 3, "min_level": 6,
+    "requires_location": "truong_hoc_bo_hoang", "requires_boss": true,
+    "boss": "quy_cau_song", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Cây cầu sắt rỉ sét bắc qua dòng sông cạn, tiếng bước chân vang vọng dù không có ai."
+  },
+  "ham_metro_bo_hoang": {
+    "name": "Hầm Metro Bỏ Hoang", "icon": "🚇", "category": "khu_dieu_tra",
+    "danger_level": 4, "min_level": 9,
+    "requires_location": "benh_vien_bo_hoang", "requires_boss": true,
+    "boss": "quy_tau_dien_ngam", "encounter_rate": {"ghost": 0.35, "npc": 0.10, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Dự án tàu điện ngầm bị bỏ dở giữa chừng, đường hầm tối om dẫn tới nơi không ai từng quay lại."
+  },
+  "toa_nha_van_phong": {
+    "name": "Tòa Nhà Văn Phòng Bỏ Hoang", "icon": "🏢", "category": "khu_dieu_tra",
+    "danger_level": 5, "min_level": 11,
+    "requires_location": "duong_lang_bo_hoang", "requires_boss": true,
+    "boss": "quy_thu_ky", "encounter_rate": {"ghost": 0.35, "npc": 0.15, "item": 0.20, "event": 0.20, "secret": 0.10},
+    "description": "Hàng chục tầng văn phòng tối đen, đèn hành lang tự bật tắt theo một quy luật không ai hiểu."
+  },
+  "dao_hoang": {
+    "name": "Đảo Hoang", "icon": "🏝️", "category": "khu_dieu_tra",
+    "danger_level": 6, "min_level": 14,
+    "requires_location": "khach_san_hoang_vu", "requires_boss": true,
+    "boss": "quy_dao_truong", "encounter_rate": {"ghost": 0.35, "npc": 0.10, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Hòn đảo nhỏ ngoài khơi từng là nơi nghỉ dưỡng, giờ chỉ còn lại những dấu chân không chủ."
+  },
+  "mo_than_bo_hoang": {
+    "name": "Mỏ Than Bỏ Hoang", "icon": "⛏️", "category": "khu_dieu_tra",
+    "danger_level": 6, "min_level": 16,
+    "requires_location": "nha_may_bo_hoang", "requires_boss": true,
+    "boss": "quy_ham_sau", "encounter_rate": {"ghost": 0.40, "npc": 0.05, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Đường hầm khai thác sụp một nửa, tiếng cuốc xẻng vẫn vang lên đều đặn trong bóng tối."
+  },
+  "thanh_co_do_nat": {
+    "name": "Thành Cổ Đổ Nát", "icon": "🏯", "category": "quy_vuc",
+    "danger_level": 7, "min_level": 21,
+    "requires_location": "khu_rung_am_u", "requires_boss": true,
+    "boss": "quy_thanh_co", "encounter_rate": {"ghost": 0.40, "npc": 0.05, "item": 0.20, "event": 0.25, "secret": 0.10},
+    "description": "Tàn tích của một tòa thành cổ xưa hơn cả những ghi chép lịch sử còn sót lại."
+  },
+  "vuc_sau_khong_day": {
+    "name": "Vực Sâu Không Đáy", "icon": "🕳️", "category": "quy_vuc",
+    "danger_level": 9, "min_level": 25,
+    "requires_location": "nghia_trang_co", "requires_boss": true,
+    "boss": "quy_chua_vuc_sau", "encounter_rate": {"ghost": 0.45, "npc": 0.00, "item": 0.15, "event": 0.30, "secret": 0.10},
+    "description": "Một vết nứt sâu hun hút giữa nghĩa trang cổ, không ai từng thả vật gì xuống mà nghe được tiếng chạm đáy."
+  }
+}

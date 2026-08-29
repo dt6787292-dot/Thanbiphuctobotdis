@@ -1,0 +1,44 @@
+{
+  "an_dau_tien": {
+    "name": "Ấn Đầu Tiên", "icon": "🏆",
+    "description": "Khống chế Quỷ đầu tiên trong đời.",
+    "condition": {"type": "capture_ghost_total_ge", "value": 1},
+    "title_reward": null
+  },
+  "ngu_quy_ngu_the": {
+    "name": "Ngự Quỷ Ngũ Thể", "icon": "🏆",
+    "description": "Khống chế cùng lúc 5 Quỷ.",
+    "condition": {"type": "ghosts_owned_ge", "value": 5},
+    "title_reward": "Chủ Nhân Ngũ Quỷ"
+  },
+  "sat_thu_100": {
+    "name": "Đồ Tể Linh Dị", "icon": "🏆",
+    "description": "Hạ gục tổng cộng 100 Quỷ trong chiến đấu.",
+    "condition": {"type": "kill_ghost_total_ge", "value": 100},
+    "title_reward": "Đồ Tể Linh Dị"
+  },
+  "diet_boss_10": {
+    "name": "Khắc Tinh Của Boss", "icon": "🏆",
+    "description": "Hạ gục 10 Boss khu vực.",
+    "condition": {"type": "boss_defeated_total_ge", "value": 10},
+    "title_reward": "Khắc Tinh Của Boss"
+  },
+  "bach_khoa_toan_ve": {
+    "name": "Bách Khoa Toàn Vẹn", "icon": "🏆",
+    "description": "Phát hiện toàn bộ Quỷ hiện có trong Bách Khoa Toàn Thư.",
+    "condition": {"type": "bachkhoa_discovered_all", "value": 0},
+    "title_reward": "Nhà Bách Khoa Linh Dị"
+  },
+  "lu_hanh_gia": {
+    "name": "Lữ Hành Giả", "icon": "🏆",
+    "description": "Đặt chân tới 10 khu vực khác nhau.",
+    "condition": {"type": "locations_visited_ge", "value": 10},
+    "title_reward": "Lữ Hành Giả"
+  },
+  "cap_do_20": {
+    "name": "Trưởng Thành", "icon": "🏆",
+    "description": "Đạt cấp độ 20.",
+    "condition": {"type": "level_ge", "value": 20},
+    "title_reward": null
+  }
+}

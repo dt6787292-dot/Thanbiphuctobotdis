@@ -1,0 +1,76 @@
+{
+  "main_01_buoc_dau": {
+    "name": "Bước Chân Đầu Tiên", "type": "chinh", "repeatable": false,
+    "description": "Khống chế Quỷ đầu tiên của bạn tại Con Hẻm Khởi Đầu.",
+    "requires": {"min_level": 1, "requires_quest": null},
+    "objective": {"event": "capture_ghost", "count": 1},
+    "rewards": {"exp": 100, "money": 100, "items": {}, "title": null}
+  },
+  "main_02_dieu_tra": {
+    "name": "Cuộc Điều Tra Bắt Đầu", "type": "chinh", "repeatable": false,
+    "description": "Khám phá thành công 5 lần ở bất kỳ khu vực nào.",
+    "requires": {"min_level": 1, "requires_quest": "main_01_buoc_dau"},
+    "objective": {"event": "explore_success", "count": 5},
+    "rewards": {"exp": 200, "money": 150, "items": {"thuoc_hoi_hp_nho": 2}, "title": null}
+  },
+  "main_03_ha_go_cua": {
+    "name": "Trừ Khử Quỷ Gõ Cửa", "type": "chinh", "repeatable": false,
+    "description": "Hạ gục Boss Quỷ Gõ Cửa tại Làng Hoàng Cương.",
+    "requires": {"min_level": 3, "requires_quest": "main_02_dieu_tra"},
+    "objective": {"event": "kill_boss", "target": "quy_go_cua", "count": 1},
+    "rewards": {"exp": 500, "money": 300, "items": {"vong_phong_an": 1}, "title": "Người Trừ Tà Tập Sự"}
+  },
+
+  "side_khach_lang_du": {
+    "name": "Khách Lãng Du", "type": "phu", "repeatable": false,
+    "description": "Đặt chân tới 5 khu vực khác nhau.",
+    "requires": {"min_level": 1, "requires_quest": null},
+    "objective": {"event": "visit_location_distinct", "count": 5},
+    "rewards": {"exp": 250, "money": 200, "items": {}, "title": null}
+  },
+  "side_nguoi_nhat_do": {
+    "name": "Người Nhặt Đồ", "type": "phu", "repeatable": false,
+    "description": "Nhặt được 3 vật phẩm bất kỳ trong lúc khám phá.",
+    "requires": {"min_level": 1, "requires_quest": null},
+    "objective": {"event": "loot_item", "count": 3},
+    "rewards": {"exp": 150, "money": 120, "items": {"bua_ho_menh": 1}, "title": null}
+  },
+  "side_tho_san_bong_toi": {
+    "name": "Thợ Săn Bóng Tối", "type": "phu", "repeatable": false,
+    "description": "Hạ gục 10 Quỷ bất kỳ trong chiến đấu.",
+    "requires": {"min_level": 3, "requires_quest": null},
+    "objective": {"event": "kill_ghost", "count": 10},
+    "rewards": {"exp": 400, "money": 250, "items": {"thuoc_hoi_hp_lon": 1}, "title": null}
+  },
+
+  "quy_bat_giu_quy_tuong": {
+    "name": "Nâng Tầm Ngự Quỷ", "type": "quy", "repeatable": false,
+    "description": "Khống chế thành công một Quỷ bậc Quỷ Tướng trở lên.",
+    "requires": {"min_level": 5, "requires_quest": "main_03_ha_go_cua"},
+    "objective": {"event": "capture_ghost_tier_at_least", "target": "quy_tuong", "count": 1},
+    "rewards": {"exp": 600, "money": 350, "items": {"manh_vo_guong": 1}, "title": null}
+  },
+  "quy_bach_khoa_so_cap": {
+    "name": "Nhà Nghiên Cứu Nghiệp Dư", "type": "quy", "repeatable": false,
+    "description": "Phát hiện đủ 10 Quỷ khác nhau trong Bách Khoa Toàn Thư.",
+    "requires": {"min_level": 1, "requires_quest": null},
+    "objective": {"event": "discover_ghost_distinct", "count": 10},
+    "rewards": {"exp": 450, "money": 300, "items": {}, "title": "Nhà Nghiên Cứu Linh Dị"}
+  },
+
+  "boss_thanh_tich_diet_boss": {
+    "name": "Kẻ Săn Boss", "type": "boss", "repeatable": false,
+    "description": "Hạ gục 3 Boss khu vực bất kỳ.",
+    "requires": {"min_level": 5, "requires_quest": null},
+    "objective": {"event": "kill_boss", "count": 3},
+    "rewards": {"exp": 900, "money": 600, "items": {"coc_thu_quy_soai": 1}, "title": "Khắc Tinh Của Boss"}
+  },
+
+  "daily_kham_pha_moi_ngay": {
+    "name": "Khám Phá Hằng Ngày", "type": "hang_ngay", "repeatable": true,
+    "description": "Khám phá thành công 3 lần trong ngày.",
+    "requires": {"min_level": 1, "requires_quest": null},
+    "objective": {"event": "explore_success", "count": 3},
+    "rewards": {"exp": 80, "money": 60, "items": {"thuoc_hoi_hp_nho": 1}, "title": null}
+  }
+}

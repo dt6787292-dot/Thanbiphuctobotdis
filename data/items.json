@@ -1,0 +1,12 @@
+{
+  "bua_ho_menh": {"name": "Bùa Hộ Mệnh", "icon": "🧿", "rarity": "thuong", "type": "linh_di", "effect": "Giảm 10% nguy cơ mất kiểm soát trong 1 giờ.", "price": 150},
+  "thuoc_hoi_hp_nho": {"name": "Thuốc Hồi HP Nhỏ", "icon": "🩹", "rarity": "thuong", "type": "hoi_hp", "effect": "Hồi 1,500 HP.", "price": 100},
+  "thuoc_hoi_hp_lon": {"name": "Thuốc Hồi HP Lớn", "icon": "💊", "rarity": "hiem", "type": "hoi_hp", "effect": "Hồi 5,000 HP.", "price": 350},
+  "vong_phong_an": {"name": "Vòng Phong Ấn", "icon": "🔗", "rarity": "hiem", "type": "phong_an", "effect": "Tăng tỉ lệ phong ấn thành công +15% trong trận kế tiếp.", "price": 400},
+  "dao_ba_tro_ta": {"name": "Dao Bạc Trừ Tà", "icon": "🗡️", "rarity": "rat_hiem", "type": "vu_khi", "effect": "Tăng công kích cơ bản +8% khi khống chế Quỷ.", "price": 800},
+  "ao_giap_linh_dj": {"name": "Áo Giáp Linh Dị", "icon": "🛡️", "rarity": "rat_hiem", "type": "trang_bi", "effect": "Tăng phòng thủ cơ bản +8%.", "price": 800},
+  "manh_vo_guong": {"name": "Mảnh Vỡ Gương Cổ", "icon": "🔮", "rarity": "cuc_hiem", "type": "do_hiem", "effect": "Nguyên liệu phá cấp hiếm — dùng trong nhiệm vụ phá cấp.", "price": 0},
+  "coc_thu_quy_soai": {"name": "Cốt Thú Quỷ Soái", "icon": "🦴", "rarity": "cuc_hiem", "type": "do_boss", "effect": "Rơi ra từ Boss cấp Quỷ Soái, dùng phá cấp.", "price": 0},
+  "nen_su_kien_linh_di": {"name": "Nến Sự Kiện Linh Dị", "icon": "🕯️", "rarity": "dac_biet", "type": "do_su_kien", "effect": "Vật phẩm giới hạn theo sự kiện thế giới.", "price": 0},
+  "manh_giay_nhiem_vu": {"name": "Mảnh Giấy Cũ", "icon": "📜", "rarity": "thuong", "type": "do_nhiem_vu", "effect": "Manh mối phục vụ nhiệm vụ điều tra.", "price": 0}
+}
